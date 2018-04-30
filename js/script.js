@@ -6,7 +6,14 @@ document.getElementById('chatArea').onkeyup = function(event){
     		document.getElementById("chatArea").value = '';
     	}
 
-    	else {
+    	else if (/\s/.test(text) == false) {
+    		alert("Your message should contain at least one (1) whitespace/space.");
+    	}
+
+    	else if (text.length <= 46)
+
+    	// else 
+    	{
 		    var message = document.createElement("div");
 		    var node = document.createTextNode(text);
 		    message.appendChild(node);
