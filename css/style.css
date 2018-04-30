@@ -1,1 +1,48 @@
+.container {
+	height: 500px; 
+	width: 75%;
+	margin: auto;
+	padding-top: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	background-color: #E9967A;
+	border-radius: 10px;
+	border-left: 5px solid #FF6347;
+	border-bottom: 5px solid #FF6347;
+}
 
+.container .chat-display {
+	height: 90%;
+	width: 100%;
+	overflow: auto;
+}
+
+.container .chatbox {
+	height: 25px;
+	width: 90%;
+	background-color: #D2B48C;
+}
+
+.container .send-btn {
+	height: 32px; 
+	background-color: #D2B48C;
+	border-radius: 5px;
+	width: 90px;
+	color: #FF6347;
+	text-align: center;
+}
+
+.container .chat {
+	height: auto;
+	display: inline-block;
+	float: right;
+	margin-right: 10px;
+	clear: both;
+	background-color: #D2B48C;
+	border-radius: 5px;
+	padding: 5px;
+	border-radius: 5px;
+	border-left: 2px solid #FF6347;
+	border-bottom: 2px solid #FF6347;
+}
