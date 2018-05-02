@@ -2,15 +2,16 @@ document.getElementById('chatArea').onkeyup = function(event){
     
     if (event.keyCode == '13'){
     	var text = document.getElementById("chatArea").value;
-    	if (text.trim() === "") {
+    	var cleanText = text.trim();
+    	if (cleanText === "") {
     		document.getElementById("chatArea").value = '';
     	}
 
-    	else if (/\s/.test(text) == false) {
+    	else if (/\s/.test(cleanText) == false) {
     		alert("Your message should contain at least one (1) whitespace/space.");
     	}
 
-    	else if (text.length <= 46)
+    	else if (cleanText.length <= 46)
 
     	// else 
     	{
@@ -27,7 +28,7 @@ document.getElementById('chatArea').onkeyup = function(event){
     }
   }
 
-  document.getElementById('sendBtn').onclick = function(event){
+document.getElementById('sendBtn').onclick = function(event){
     
     var text = document.getElementById("chatArea").value;
     if (text.trim() === "") {
