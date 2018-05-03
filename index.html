@@ -4,19 +4,24 @@
 	<title>Tweeter</title>
 </head>
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.5.3/mocha.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.5.3/mocha.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
 <body>
-<div>
-	<h1>Tweeter</h1>
-</div>
 
+<div>
+	<h1 class="header">Tweeter</h1>
+</div>
 <div class="container">
-	<div id="chatDisplay" class="chat-display">
-		
+	<div id="chatDisplay" class="chat-display">	
 	</div>
 	<HR>
 	<input id="chatArea" class="chatbox" type="text" autofocus></input>
 	<button id="sendBtn" class="send-btn" value="">SEND</button>
 </div>
+<div id="mocha"></div>
+
+
 
 </body>
 <script src="js/script.js"></script>

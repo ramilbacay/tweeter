@@ -1,3 +1,9 @@
+.header {
+	text-transform: uppercase;
+	text-align: center;
+}
+
+
 .container {
 	height: 500px; 
 	width: 75%;
@@ -12,7 +18,18 @@
 	border-bottom: 5px solid #FF6347;
 }
 
+.controls .btn {
+	margin: 10px;
+	height: 30px; 
+	background-color: #D2B48C;
+	border-radius: 5px;
+	width: auto;
+	color: #FF6347;
+	text-align: center;
+}
+
 .container .chat-display {
+	z-index: 1;
 	height: 90%;
 	width: 100%;
 	overflow: auto;
