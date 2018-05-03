@@ -5,6 +5,10 @@ document.getElementById('chatArea').onkeyup = function(event)
     
     if (event.keyCode == '13')
     {
+    	var d = new Date(); // for now
+		d.getHours(); // => 9
+		d.getMinutes(); // =>  30
+		d.getSeconds(); // => 51
     	var input = document.getElementById("chatArea").value;
     	var trimInput = input.trim();
     	var inputLength = trimInput.length;
@@ -27,15 +31,15 @@ document.getElementById('chatArea').onkeyup = function(event)
      			for (var x = 0; x < chunks.length; x++)
      			{
 			 		var message = document.createElement("div");
-			 				var node = document.createTextNode(x+1 + "/" + chunks.length + " " + chunks[x]);
-							message.appendChild(node);
-							message.className = "chat"
-							var element = document.getElementById("chatDisplay");
-							element.appendChild(message);
-							document.getElementById("chatArea").value = '';
-							var scrollDown = document.getElementById('chatDisplay');
-							scrollDown.scrollTop = scrollDown.scrollHeight;
-    				}
+			 		var node = document.createTextNode(x+1 + "/" + chunks.length + " " + chunks[x]);
+					message.appendChild(node);
+					message.className = "chat"
+					var element = document.getElementById("chatDisplay");
+					element.appendChild(message);
+					document.getElementById("chatArea").value = '';
+					var scrollDown = document.getElementById('chatDisplay');
+					scrollDown.scrollTop = scrollDown.scrollHeight;
+    			}
      	}
 
     	else
