@@ -26,7 +26,7 @@ document.getElementById('chatArea').onkeyup = function(event)
 
     	else if (inputLength > 50) 
     	{
-	     	var chunks = splitMessage(trimInput, 46);
+	     	var chunks = splitMessage(trimInput, 50);
    			
      			for (var x = 0; x < chunks.length; x++)
      			{
@@ -81,7 +81,7 @@ document.getElementById('sendBtn').onclick = function(event)
 
     	else if (inputLength > 50) 
     	{
-	     	var chunks = splitMessage(trimInput, 46);
+	     	var chunks = splitMessage(trimInput, 50);
    			
      			for (var x = 0; x < chunks.length; x++)
      			{
@@ -160,7 +160,7 @@ mocha.setup('bdd');
 
 describe("chunk-string", function() {
   it("Should split message if length is more than 50 characters", function() {
-    assert.deepEqual(splitMessage("I can't believe Tweeter now supports chunking my messages, so I don't have to do it myself.", 46), ["I can't believe Tweeter now supports chunking", "my messages, so I don't have to do it myself."]);
+    assert.deepEqual(splitMessage("I can't believe Tweeter now supports chunking my messages, so I don't have to do it myself.", 50), ["I can't believe Tweeter now supports chunking my", "messages, so I don't have to do it myself."]);
   });
   it("Should split at spaces", function() {
     assert.deepEqual(splitMessage("I can't believe Tweeter now supports chunking my messages", 33), ["I can't believe Tweeter now", "supports chunking my messages"]);
