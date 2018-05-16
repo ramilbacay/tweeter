@@ -5,10 +5,6 @@ document.getElementById('chatArea').onkeyup = function(event)
     
     if (event.keyCode == '13')
     {
-    	var d = new Date(); // for now
-		d.getHours(); // => 9
-		d.getMinutes(); // =>  30
-		d.getSeconds(); // => 51
     	var input = document.getElementById("chatArea").value;
     	var trimInput = input.trim();
     	var inputLength = trimInput.length;
@@ -26,7 +22,7 @@ document.getElementById('chatArea').onkeyup = function(event)
 
     	else if (inputLength > 50) 
     	{
-	     	var chunks = splitMessage(trimInput, 50);
+	     	var chunks = splitMessage(trimInput, 44);
    			
      			for (var x = 0; x < chunks.length; x++)
      			{
@@ -81,7 +77,7 @@ document.getElementById('sendBtn').onclick = function(event)
 
     	else if (inputLength > 50) 
     	{
-	     	var chunks = splitMessage(trimInput, 50);
+	     	var chunks = splitMessage(trimInput, 44);
    			
      			for (var x = 0; x < chunks.length; x++)
      			{
